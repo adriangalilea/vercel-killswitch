@@ -1,4 +1,6 @@
-# Why
+# Vercel Killswitch
+
+## Why
 We've all heard AWS horror stories, you wake up one day and see a $XX,XXX bill, I rather not, thanks.
 
 Vercel [recently anounced Spend Management](https://vercel.com/blog/introducing-spend-management-realtime-usage-alerts-sms-notifications) which is a great start but they give you this warning:
@@ -9,7 +11,7 @@ And while they `Promise()`
 
 I wanted to have a solution now, so we can actually ship on Fridays 😜
 
-# What
+## What
 Creates an /api/pause webhook in your Next.js App router Vercel hosted site:
 `https://your-project-url.whatever/api/pause`
 If it receives the (spend management post payload message)[https://vercel.com/docs/accounts/spend-management#spend-amount], your project will automatically pause.
@@ -24,7 +26,7 @@ I urge you to double-check everything, and let me know if it does or it doesn't 
 
 I'm not responsible for any charge you have using this.
 
-# How
+## How
 1. Install this component in your next.js 14 app.
    a. npm `npm i vercel-killswitch`
    b. manually [`/app/api/pause/route.ts`](https://github.com/adriangalilea/vercel-killswitch/blob/main/app/api/pause/route.ts) -> `/app/api/pause/route.ts`
@@ -44,7 +46,7 @@ That's it.
 
 Feel free to modify env variable names.
 
-# Testing
+## Testing
 1. Go to [Postman](https://web.postman.co).
 2. Set up a new request:
    - Method: `POST`
@@ -77,16 +79,18 @@ Feel free to modify env variable names.
    ```
 6. Hit send. Your project should be paused.
 
-# To-do
+## To-do
 - [x] Test using postman
 - [ ] Test on a real vercel trigger(let me know if it happens to you, or if it doesn't!)
 - [x] Publish on npm
-- [ ] Publish as a template❓
+- [ ] Publish as a template on Vercel❓
 - [ ] Blog post
 - [ ] YT video
-- [ ] interactive install, explaining where the route is, leading user into guide.
+- [ ] interactive install
+  - [ ] letting user choose where `route.ts` get's copied
+  - [ ] leading user through the rest of the set-up
 
-# vercel
+## vercel
 - [Anouncement](https://vercel.com/blog/introducing-spend-management-realtime-usage-alerts-sms-notifications)
 - [Spend Management](https://vercel.com/docs/accounts/spend-management)
 - [Pausing a project](https://vercel.com/docs/projects/overview#pausing-a-project)
