@@ -4,7 +4,7 @@
   "description": "Automatically pauses your Vercel project when spend limits are reached. This Next.js App router module integrates with Vercel's Spend Management to trigger a project pause via webhook.",
   "main": "app/api/pause/route.js",
   "scripts": {
-    "postinstall": "mkdir -p ../../../app/api/pause && cp app/api/pause/route.ts ../../../app/api/pause/"
+    "postinstall": "mkdir -p ../../app/api/pause && cp app/api/pause/route.ts ../../app/api/pause/"
   },
   "repository": {
     "type": "git",
