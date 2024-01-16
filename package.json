@@ -1,0 +1,34 @@
+{
+  "name": "vercel-killswitch",
+  "version": "1.0.3-beta",
+  "description": "Automatically pauses your Vercel project when spend limits are reached. This Next.js App router module integrates with Vercel's Spend Management to trigger a project pause via webhook.",
+  "main": "app/api/pause/route.js",
+  "scripts": {
+    "postinstall": "mkdir -p ../../../app/api/pause && cp app/api/pause/route.ts ../../../app/api/pause/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriangalilea/vercel-killswitch.git"
+  },
+  "keywords": [
+    "vercel",
+    "nextjs",
+    "spend management",
+    "webhook",
+    "project pause",
+    "automatic budget control",
+    "panic",
+    "killswitch"
+  ],
+  "author": "Adrian Galilea Delgado <adriangalilea@gmail.com> (https://adriangalilea.com)",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^3.0.1",
+    "ncp": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/adriangalilea/vercel-killswitch/issues"
+  },
+  "homepage": "https://github.com/adriangalilea/vercel-killswitch#readme",
+  "devDependencies": {}
+}
