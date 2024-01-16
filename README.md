@@ -14,7 +14,7 @@ I wanted to have a solution now, so we can actually ship on Fridays 😜
 ## What
 Creates an /api/pause webhook in your Next.js App router Vercel hosted site:
 `https://your-project-url.whatever/api/pause`
-If it receives the (spend management post payload message)[https://vercel.com/docs/accounts/spend-management#spend-amount], your project will automatically pause.
+If it receives the [spend management post payload message](https://vercel.com/docs/accounts/spend-management#spend-amount), your project will automatically pause.
 
 # ⚠️Caution
 I have **tested only in postman** and my project was paused successfully several times, and while I think this works, there might be unknown circumstances in which it doesn't:
