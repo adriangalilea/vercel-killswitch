@@ -1,6 +1,6 @@
 {
   "name": "vercel-killswitch",
-  "version": "1.0.3-beta",
+  "version": "1.0.0-beta",
   "description": "Automatically pauses your Vercel project when spend limits are reached. This Next.js App router module integrates with Vercel's Spend Management to trigger a project pause via webhook.",
   "main": "app/api/pause/route.js",
   "scripts": {
