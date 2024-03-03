@@ -1,3 +1,5 @@
+Archiving this since Vercel allow hard-limits now, but this may be handy still if you want to use the webhook for something else.
+
 # Vercel Killswitch
 
 ## Why
